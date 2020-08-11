@@ -10,18 +10,25 @@ MCPUHistName pileup
 
 SpecialMCPUCalculation false
 SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6.root
-/// SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
+# SpecialMCPUHistos new_mc2017_pileupReweighting_NanoAODv6_wanddylo_incl.root
 
-ApplyTauIDSF false
+ApplyTauIDSF true
+TauIdSFsByDM true # Tau ID scale factors that are decay mode (DM) - dependent. If using di-tau triggers and tau-pt > 40 GeV, this are the recommended SFs.
+TauSFforEmbeddedSamples false
+
+ApplyTauAntiEleSF true
+ApplyTauAntiMuSF true
+
 UsePileUpWeight true
 ApplyZBoostSF false
 
 isData false
 ApplyGenWeight  true
 
+ApplyHEMVeto2018 true
+
 /// ------ Data-specific cuts ------///
 FilterDataByGoldenJSON true
-ApplyHEMVeto2018 true
 
 /// ------ MC Gen-level cuts ------///
 /// --- HT filter --- ///
