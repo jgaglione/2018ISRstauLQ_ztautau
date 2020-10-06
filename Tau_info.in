@@ -2,7 +2,7 @@
             Smear
 /////////////////////////////////
 
-SmearTheParticle 0
+SmearTheParticle 1
 ApplyETauFakeRateESSF 1
 
 PtScaleOffset 1.0
@@ -33,9 +33,9 @@ TauIDAlgorithm Tau_idDeepTau2017v2p1
 //RECO CUTS///
 
 EtaCut 2.1
-PtCut 60.0 9999.9
+PtCut 20.0 40.0
 
-DoDzCut true
+DoDzCut false
 DzCutThreshold 0.2
 
 DoDiscrByLeadTrack false
@@ -90,10 +90,10 @@ MetMtCut 0.0    50.0
 
 //----RECO CUTS----////
 
-EtaCut 2.1
-PtCut 60.0 9999.9
+EtaCut 2.3
+PtCut 20.0 9999.9
 
-DoDzCut true
+DoDzCut false
 DzCutThreshold 0.2
 
 DoDiscrByLeadTrack false
